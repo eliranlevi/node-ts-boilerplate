@@ -1,6 +1,10 @@
 # Node-TypeScript boilerplate
 
-Preconfigured Node.js application boilerplate with TypeScript
+Preconfigured boilerplate for building Node.js applications using Express & TypeScript
+
+## Usage
+
+Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yarn install`) and you're ready to go
 
 ## Scripts
 
