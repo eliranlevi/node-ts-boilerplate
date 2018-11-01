@@ -4,7 +4,7 @@ Preconfigured boilerplate for building Node.js applications using Express & Type
 
 ## Usage
 
-Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yarn install`) and you're ready to go
+Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yarn install`) and you're ready to go (`yarn start`)
 
 ## Scripts
 
