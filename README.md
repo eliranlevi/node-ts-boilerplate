@@ -1,6 +1,10 @@
 # Node-TypeScript boilerplate
 
-Preconfigured boilerplate for building Node.js applications using Express & TypeScript
+Preconfigured boilerplate for building Node.js applications using Express & TypeScript, MySQL with Objection (ORM) and Knex.
+
+## Goal
+
+Start building a Node.js server using SQL database and TypeScsipt in seconds.
 
 ## Usage
 
@@ -10,6 +14,7 @@ Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yar
 
 - `yarn start` - serves the app on `localhost` in watch mode
 - `yarn run build` - builds the project, the out directory is `/dist`
+- `knex *` - knex scripts (`knex` should be installed globally to use its CLI)
 
 ## Packages
 
@@ -17,6 +22,16 @@ Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yar
 - [request-promise-native](https://github.com/request/request-promise-native) - use `Promise`s in Node requests
 - [express](https://github.com/expressjs/express) - watch (and interact) whatever you expect in the browesr rather than CLI
 - [nodemon](https://github.com/remy/nodemon) - runs the server in watch mode (i.e. will rebuild each time the code has changed)
+
+### Default DB-related
+
+- [knex](https://github.com/tgriesser/knex) - a query builder for PostgreSQL, MySQL and SQLite3
+- [mysql2](https://github.com/sidorares/node-mysql2) - MySql database client
+- [objection](https://github.com/Vincit/objection.js) - [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping)
+
+## Recommendations (best practices)
+
+- Use [Knex migrations](https://knexjs.org/#Migrations) for creating database schemas
 
 ## License
 

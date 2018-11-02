@@ -8,12 +8,17 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "knex": "^0.15.2",
+    "mysql2": "^1.6.1",
     "nodemon": "^1.18.5",
+    "objection": "^1.4.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
+    "@types/knex": "^0.14.26",
+    "@types/mysql": "^2.15.5",
     "@types/node": "^10.12.0",
     "@types/request": "^2.47.1",
     "@types/request-promise-native": "^1.0.15",
