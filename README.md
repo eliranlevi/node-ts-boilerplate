@@ -4,7 +4,7 @@ Preconfigured boilerplate for building Node.js applications using Express & Type
 
 ## Goal
 
-Start building a Node.js server using SQL database and TypeScsipt in seconds.
+Start building a Node.js server using SQL database and TypeScsipt in seconds 🎉
 
 ## Usage
 
