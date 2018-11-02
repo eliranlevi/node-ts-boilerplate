@@ -23,7 +23,7 @@ Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yar
 - [express](https://github.com/expressjs/express) - watch (and interact) whatever you expect in the browesr rather than CLI
 - [nodemon](https://github.com/remy/nodemon) - runs the server in watch mode (i.e. will rebuild each time the code has changed)
 
-### Default DB-related
+#### Database-related
 
 - [knex](https://github.com/tgriesser/knex) - a query builder for PostgreSQL, MySQL and SQLite3
 - [mysql2](https://github.com/sidorares/node-mysql2) - MySql database client
