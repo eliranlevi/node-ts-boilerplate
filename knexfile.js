@@ -15,4 +15,18 @@ module.exports = {
   migrations: {
     tableName: "migrations",
   },
+  createTablesSafely: knex => tables => {
+    const createTables = tables.map(({ name, schema }) => {
+      return knex.schema.createTable(name, schema)
+    });
+
+    return Promise.all(createTables)
+      .catch(e => {
+        const dropTables = tables.map(({ name }) => {
+          return knex.schema.dropTableIfExists(name);
+        });
+
+        return Promise.all(dropTables).then(() => Promise.reject(e));
+      });
+  }
 };
