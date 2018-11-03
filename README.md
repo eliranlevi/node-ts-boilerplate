@@ -16,7 +16,7 @@ Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yar
 - `yarn run build` - builds the project, the out directory is `/dist`
 - `yarn db:migrate` - updates the database with the latest migrations an alias for `knex migrate:latest`),
 - `yarn db:rb` - rollbacks last migrations (an alias for `knex migrate:rollback`),
-- `yarn db:mc migration_name` - creates a new migration with name `migration_name` (an alias for `knex migrate:make migration_name`)
+- `yarn db:mc migration_name` - creates a new migration with name `migration_name` (an alias for `knex migrate:make`)
 
 ## Packages 📦
 
