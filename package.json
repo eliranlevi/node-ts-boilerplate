@@ -4,7 +4,10 @@
   "author": "Eliran Levi",
   "scripts": {
     "start": "nodemon",
-    "build": "tsc"
+    "build": "tsc",
+    "db:migrate": "knex migrate:latest",
+    "db:rb": "knex migrate:rollback",
+    "db:mc": "knex migrate:make"
   },
   "dependencies": {
     "express": "^4.16.4",
