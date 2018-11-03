@@ -14,9 +14,11 @@ Clone the repo, remove `.git` folder (`rm -rf .git`), install dependencies (`yar
 
 - `yarn start` - serves the app on `localhost` in watch mode
 - `yarn run build` - builds the project, the out directory is `/dist`
-- `knex *` - knex scripts (`knex` should be installed globally to use its CLI)
+- `yarn db:migrate` - updates the database with the latest migrations an alias for `knex migrate:latest`),
+- `yarn db:rb` - rollbacks last migrations (an alias for `knex migrate:rollback`),
+- `yarn db:mc migration_name` - creates a new migration with name `migration_name` (an alias for `knex migrate:make migration_name`)
 
-## Packages
+## Packages 📦
 
 - [TypeScript](https://github.com/Microsoft/TypeScript) is here just to get modern ES6 features in Node, like `import/export`
 - [request-promise-native](https://github.com/request/request-promise-native) - use `Promise`s in Node requests
