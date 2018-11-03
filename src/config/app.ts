@@ -1,11 +1,9 @@
-const app = {
+const version = 1;
+
+export default {
   api: {
-    version: 1,
-    path() {
-      return `/v${app.api.version}`;
-    },
+    version,
+    path: `/v${version}`,
   },
   port: 3000,
 };
-
-export default app;
