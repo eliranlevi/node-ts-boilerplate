@@ -1,12 +1,22 @@
 import express from "express";
+import defineRoutes from "./routes";
+import configDb from "./config/database";
+import config from "./config/app";
 
-const PORT = 3000;
+const { port, api } = config;
 const app = express();
+const router = defineRoutes();
+const base = api.path();
 
-app.get("/", (req, res) => {
-  res.send("Node app is live");
+configDb();
+
+app.use(base, router);
+
+app.listen(port, () => {
+  console.log(`Access your app now on http://localhost:${port}`);
 });
 
-app.listen(PORT, () => {
-  console.log(`Access your app now on http://localhost:${PORT}`);
-});
+// this route can be removed
+app.get("/", (req, res) => res.send("Node app is live"));
+
+export default app;
