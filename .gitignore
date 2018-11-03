@@ -1,7 +1,6 @@
 # folders
 node_modules/
 dist/
-.vscode/
 
 # files
 yarn-error.log
