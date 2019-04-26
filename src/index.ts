@@ -12,7 +12,7 @@ const router = defineRoutes();
 
 dbConnect();
 
-app.use(base, middlewares)
+app.use(base, middlewares);
 app.use(base, router);
 
 app.listen(port);
