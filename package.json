@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "knex": "^0.15.2",
+    "knex": "^0.19.5",
     "mysql2": "^1.6.1",
     "nodemon": "^1.18.5",
     "objection": "^1.4.0",
